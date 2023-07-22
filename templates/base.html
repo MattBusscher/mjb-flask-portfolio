@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/app.css" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'red': '#703030',
+                'grey': '#2F343B',
+                'green': '#7E827A',
+                'teak': '#E3CDA4',
+                'maroon': '#C77966',
+              }
+            }
+          }
+        }
+      </script>
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<nav class="nav-primary"> <img src="{{ url_for('static', filename='images/250logo.png') }}" height="2rem" alt="MJB Logo" style="height: 2rem;"> 
+    <button class="btn-primary rounded-lg"><a href="/" class="">Home</a></button>
+    <button class="btn-primary rounded-lg"><a href="/resume" class="">Work History</a></button>
+    <button class="btn-primary rounded-lg"><a href="/projects" class="">Projects</a></button>
+</nav>
+<body>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2023 by <a href="http://domain.invalid/">Matthew Busscher</a>.
+        {% endblock %}
+    </div>
+</body>
+</html>
