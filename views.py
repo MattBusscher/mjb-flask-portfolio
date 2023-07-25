@@ -1,9 +1,19 @@
 from flask import Blueprint, render_template
 
 views = Blueprint(__name__, "views")
+def calculate_lines_of_code():
+    python_code = """
+    def say_hello():
+        print("Hello, World!")
+
+    for i in range(15000):
+        print(i)
+    """
+    return len(python_code.strip().split('\n'))
 @views.route("/")
 def index():
-    return render_template("home_index.html")
+    lines_of_code = calculate_lines_of_code()
+    return render_template("home_index.html", lines_of_code=lines_of_code)
 
 @views.route("/about")
 def about():

@@ -20,22 +20,23 @@
           }
         }
       </script>
+      <link rel="icon" href="{{ url_for('static', filename='images/250logo.png') }}" type="image/x-icon">
     <title>{% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
-<nav class="nav-primary"> <img src="{{ url_for('static', filename='images/250logo.png') }}" height="2rem" alt="MJB Logo" style="height: 2rem;"> 
-    <button class="btn-primary rounded-lg"><a href="/" class="">Home</a></button>
-    <button class="btn-primary rounded-lg"><a href="/resume" class="">Work History</a></button>
-    <button class="btn-primary rounded-lg"><a href="/projects" class="">Projects</a></button>
+<nav class="nav-primary py-1"> <img src="{{ url_for('static', filename='images/250logo.png') }}" height="2rem" alt="MJB Logo" style="height: 2rem;"> 
+    <button class="btn-primary rounded-lg hover:bg-maroon duration-500"><a href="/" class="">Home</a></button>
+    <button class="btn-primary rounded-lg hover:bg-maroon duration-500"><a href="/resume" class="">Work History</a></button>
+    <button class="btn-primary rounded-lg hover:bg-maroon duration-500"><a href="/projects" class="">Projects</a></button>
 </nav>
 <body>
     <div id="content">
         {% block content %}
         {% endblock %}
     </div>
-    <div id="footer">
+    <div class="flex justify-center text-teak" id="footer">
         {% block footer %}
-        &copy; Copyright 2023 by <a href="http://domain.invalid/">Matthew Busscher</a>.
+        <a href="http://github.com/mattbusscher">&copy; Copyright 2023 - Matthew Busscher</a>.
         {% endblock %}
     </div>
 </body>

@@ -4,54 +4,85 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div class="banner-container p-4 m-2 bg-red rounded-lg">
+<div class="banner-container p-4 m-2 bg-grey rounded-lg">
     <h1 class="text-bold text-5xl text-teak">Matthew Busscher</h1>
-    <p class="text-green">A highly driven software developer, specializing in Javascript, Python, PHP, Nodejs, NextJs, Docker, etc</p>
+    <p class="text-green">A highly driven software developer, specializing in Javascript, Python, PHP, Nodejs, etc</p>
 </div>
 
     <body>
-        <div>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2 lg:w-1/3 p-3">
-                    <div class="bg-grey rounded-lg shadow-lg p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-grey-light"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-grey-dark">Experience</h5>
-                                <h3 class="font-bold text-3xl">3+ Years</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 p-3">
-                    <div class="bg-grey rounded-lg shadow-lg p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-grey-light"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-grey-dark">Projects</h5>
-                                <h3 class="font-bold text-3xl">5+</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 p-3">
-                    <div class="bg-grey rounded-lg shadow-lg p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-grey-light"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-grey-dark"></h5>
-                                <h3 class="font-bold text-3xl"></h3>
-                            </div>
-                        </div>
+
+        <div class="flex justify-center">
+        <div class="flex flex-col rounded-lg bg-grey shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row m-2">
+            <img
+                class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                src="{{ url_for('static', filename='images/CardPic1.png') }}"
+                alt="" />
+            <div class="flex flex-col justify-start p-6">
+                <h5
+                class="mb-2 text-xl font-medium text-maroon hover:underline">
+                <a href="/resume">Experience</a>
+                </h5>
+                <p class="mb-4 text-base text-teak">
+                With over 3 years in the industry, I have worked on many projects and have a wide range of experience. I have worked on projects ranging from small websites to large scale applications. Using my experience in web development, I have helped many clients achieve their online goals.
+                </p>
+                
+            </div>
         </div>
 
+        <div class="flex flex-col rounded-lg bg-grey shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:max-w-xl md:flex-row m-2">
+            <img
+                class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                src="{{ url_for('static', filename='images/CardPic2.png') }}"
+                alt="" />
+            <div class="flex flex-col justify-start p-6">
+                <h5
+                class="mb-2 text-xl font-medium text-maroon hover:underline">
+                <a href="/projects">Projects</a>
+                </h5>
+                <p class="mb-4 text-base text-teak">
+                I have worked on many projects, from small personal projects that are of interest to me, as well as large scale projects for clients. I am passionate about all the work I produce, and I am always looking for new projects to work on.
+                </p>
+                
+            </div>
+        </div>
 
+        </div>
+        <div class="flex justify-center mt-4">
+        <div class="bg-grey rounded-lg p-4 max-w-6xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" >
+            <img src="{{ url_for('static', filename='images/youngmatt.jpeg') }}" alt="My Scuba certification at age " class="rounded-lg mb-2" style="aspect-ratio: 1 / 1;">
+            <h1 class="text-bold text-3xl mx-2 text-maroon hover:underline">About Me</h1>
+            <div>
+                <p class="text-teak"><br>
+                    I was born and raised in Fennville, Michigan, a place that holds a special place in my heart. My life took a thrilling turn in 1997 when my family and I decided to embark on an unforgettable adventure by moving onto a boat. It was an incredible journey as my father went all the way to France to bring back the Lagoon 410, and we had a skilled crew sail it to meet us in West Palm Beach, where my mother, brother, and I eagerly awaited. <br><br>
+
+                    The allure of the sea captured my soul, and we sailed through the picturesque Caribbean, exploring the beautiful British Virgin Islands, until we reached the mesmerizing shores of Trinidad and Tobago.
+                    <br><br>
+                    After returning to West Palm Beach, it was time to plant some roots. I enrolled in the local school system, but my heart remained close to the water, where I felt the most at home. Those days were filled with exhilarating experiences of surfing and skimboarding. Sports also played a significant role in my life, as I enthusiastically participated in baseball, basketball, and lacrosse. Alongside my sporting endeavors, I engaged in various academic groups and clubs like the Future Business Leaders of America and the Academy of Finance.
+                    <br><br>
+                    With honors in hand, I proudly graduated from high school, and my love for music opened up new opportunities. I found myself DJing at the local club, and to my surprise, I excelled at it. What started as a humble beginning soon led me to headline several nights a week and become a sought-after DJ in the city.
+                    <br><br>
+                    Following my passion for Marketing, I pursued my studies at Florida Gulf Coast University. During this time, I had the privilege of interning with local marketing companies, which opened my eyes to the evolving synergy between Marketing and IT. This revelation prompted me to pivot my talents towards this exciting intersection.
+                    <br><br>
+                    A chance encounter during a lunch with a fellow marketing peer changed the course of my life once again. I was offered a job with Aspen Skiing Company in Colorado. The thrill of this opportunity compelled me to pack my bags and head west to begin a new chapter.
+                    <br><br>
+                    Life had more surprises in store for me. Amidst the snow-capped mountains, I met a local DJ who needed assistance. We struck up a friendship, and soon I found myself contracting with his company, "Kickin' Aspen." Beyond just events, I contributed to enhancing the business's technology, setting up a convenient calling calendar on their website for prospective clients.
+                    <br><br>
+                    Then, just as life seemed to be settling into a rhythm, the unforeseen arrival of Covid-19 changed everything. Mountains were silent, local businesses shut down, leaving me with ample time to explore personal growth and long-awaited side projects. Delving into python and JavaScript, my skills rapidly advanced, and with a heavy heart, I bid farewell to Colorado and made my way back to Florida.
+                    <br><br>
+                    In the face of uncertainties, I stood strong, ready to embrace new opportunities, armed with a wealth of experiences and skills. My journey so far has taught me resilience, adaptability, and an unwavering determination to follow my passions wherever they may lead.
+            </div>
+        </div>
+        </div>
+        <div class="flex justify-center mt-4">
+            <div class="bg-grey rounded-lg p-4 max-w-6xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" >
+                <img src="{{ url_for('static', filename='images/250logo.png') }}" alt="About Me" class="rounded-lg" style=" height: auto;">
+                <h1 class="text-bold text-3xl mb-2 text-maroon hover:underline">MORE</h1>
+                <div>
+                    <p class="text-teak"><br>
+                       loem ipsum
+                </div>
+            </div>
+            </div>
     </body>
     
 {% endblock %}

@@ -1,28 +1,49 @@
 {% extends 'base.html' %}
-{% block title %}Home{% endblock %}
+{% block title %}Projects{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
 {% block content %}
-<body>
+<div class="container mx-auto py-8 p-8">
 
-<div class="banner-container p-4 m-2 bg-red rounded-lg">
-    <h1 class="text-bold text-5xl text-teak hover:text-red-100"><a class="hover:scale-110" href="https://spacefam.vip/public/space_radio">Space Radio</a></h1>
-    <p class="text-green">A php azuracast program that I deployed for a community that I am a part of. It has playlists of great songs for the group and allows DJ's to produce a live stream easily</p>
+    <div class="banner-container p-6 m-4 bg-grey rounded-lg hover:bg-green hover:text-teak duration-500">
+        <h3 class="font-semibold text-red mb-4"><a class="hover:underline text-3xl" href="https://spacefam.vip/public/space_radio">Space Radio</a></h3>
+        <p class="text-teak">A php azuracast program that I deployed for a community that I am a part of. It has playlists of great songs for the group and allows DJ's to produce a live stream easily</p>
+    </div>
+
+    
+    <div class="banner-container p-6 m-4 bg-grey rounded-lg hover:bg-green hover:text-teak duration-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <h3 class="font-semibold text-red mb-4"><a class="hover:underline text-3xl" href="https://ethereum.org/en/">Ethereum Crypto Mine</a></h3>
+        <p class="text-teak">Created a financial and business plan to verify profit numbers. Purchased and assembled computer components. Mined Ethereum for about a year before they moved to POS.</p>
+    </div>
+    
+    <div class="banner-container p-6 m-4 bg-grey rounded-lg hover:bg-green hover:text-teak duration-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <h3 class="font-semibold text-red mb-4"><a class="hover:underline text-3xl" href="https://github.com/MattBusscher/MERNStack">MERN Stack for Website</a></h3>
+        <p class="text-teak">MERN stack template for a website. This is a template that includes most of the libraries and packages for developing, testing and deploying a blog type website. This template is a good starting place for client websites</p>
+    </div>
+    
+    <div class="banner-container p-6 m-4 bg-grey rounded-lg hover:bg-green hover:text-teak duration-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <h3 class="font-semibold text-red mb-4"><a class="hover:underline text-3xl" href="https://github.com/MattBusscher/MernEcom">MERN Stack for E-Commerce</a></h3>
+        <p class="text-teak">MERN stack template that can be used for a storefront. Very simple setup that is ready with NodeJs backend, MySQL database, Tailwind CSS.</p>
+    </div>
+    
+    <div class="banner-container p-6 m-4 bg-grey rounded-lg hover:bg-green hover:text-teak duration-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <h3 class="font-semibold text-red mb-4"><a class="hover:underline text-3xl" href="https://github.com/MattBusscher/FireSvelte/tree/master/svelte-firebase">Svelte Site</a></h3>
+        <p class="text-teak">Website created with Svelte kit, using Google FireStore as a database. Uses Tailwind CSS for styles. This was used to learn the many aspects that makes Svelte different from other web frameworks. </p>
+    </div>
+    
+    <div class="banner-container p-6 m-4 bg-grey rounded-lg hover:bg-green hover:text-teak duration-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <h3 class="font-semibold text-red mb-4"><a class="hover:underline text-3xl" href="https://codepen.io/MattBusscher-the-flexboxer/pen/LYXBOda">Scrolling Menu</a></h3>
+        <p class="text-teak">A website menu that I built to learn more about CSS effects, animation, and data tags</p>
+    </div>
+    
+    <div class="banner-container p-6 m-4 bg-grey rounded-lg hover:bg-green hover:text-teak duration-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <h3 class="font-semibold text-red mb-4"><a class="hover:underline text-3xl" href="https://codepen.io/MatthewBusscher/pen/gOQjXyM">Static Motion Card</a></h3>
+        <p class="text-teak">A website card that was built for a clients shop products. The hovered card has an effect to briefly look like television static.</p>
+    </div>
+    
 </div>
-
-<div class="banner-container p-4 m-2 bg-red rounded-lg">
-    <h1 class="text-bold text-5xl text-teak hover:text-red-100"><a class="hover:scale-110" href="https://codepen.io/MattBusscher-the-flexboxer/pen/LYXBOda">Scrolling Menu</a></h1>
-    <p class="text-green">A website menu that I built to learn more about CSS effects, animation, and data tags</p>
-</div>
-
-<div class="banner-container p-4 m-2 bg-red rounded-lg">
-    <h1 class="text-bold text-5xl text-teak hover:text-red-100"><a class="hover:scale-110" href="https://codepen.io/MatthewBusscher/pen/gOQjXyM">Static Motion Card</a></h1>
-    <p class="text-green">A website card that was built for a clients shop products. The hovered card has an effect to briefly look like television static.</p>
-</div>
-
-</body>
 {% endblock %}
 {% block footer %}
-    {{ super() }}
+{{ super() }}
 {% endblock %}

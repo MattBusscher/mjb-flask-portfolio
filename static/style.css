@@ -31,9 +31,6 @@ main > div.banner-container {
     padding: 0.5rem;
     margin: 0.5rem;
 }
-.wp-block-search__label {
-    color: #b1b1b1;
-}
 
 /* Footer */
 footer.content-info {
@@ -49,7 +46,7 @@ div.banner-container {
 }
 
 button.btn-primary {
-    background-color: #703030;
+    background-color: #2F343B;
     color: #E3CDA4;
     border-color: #E3CDA4;
     padding: 0rem 0.5rem 0rem 0.5rem;
@@ -62,4 +59,7 @@ button.btn-secondary {
     padding: 0rem 0.5rem 0rem 0.5rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
     max-width: fit-content;
+}
+#content {
+    padding: 0rem 1.5rem 0rem 1.5rem;
 }
