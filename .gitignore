@@ -1,2 +1,10 @@
+#Untracked files:
 sendgrid.env
 config.ini
+node_modules
+
+#Ignored files:
+
+#Untracked directories:
+node_modules/
+```
