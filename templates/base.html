@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     {% block head %}
+    <meta charset="UTF-8">
+    <!-- remove this and build instead -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="/static/style.css" />
     <link rel="stylesheet" href="/static/dist/output.css" />
     <link rel="icon" href="{{ url_for('static', filename='images/250logo.png') }}" type="image/x-icon">
