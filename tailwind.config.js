@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'red': '#703030',
+        'red': '#41ead4',
         'grey': '#2F343B',
-        'green': '#7E827A',
-        'teak': '#E3CDA4',
-        'maroon': '#C77966',
+        'green': '#74a4bc',
+        'teak': '#BAA885',
+        'maroon': '#ac9fbb',
+        'purp': '#7d83ff',
+        'blue': '#d4dcff'
       }
     },
   },
