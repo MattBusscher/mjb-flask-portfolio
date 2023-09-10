@@ -873,9 +873,9 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-green:hover {
+.hover\:bg-blue:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(116 164 188 / var(--tw-bg-opacity));
+  background-color: rgb(212 220 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-maroon:hover {
@@ -883,19 +883,9 @@ video {
   background-color: rgb(172 159 187 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 220 255 / var(--tw-bg-opacity));
-}
-
 .hover\:text-grey:hover {
   --tw-text-opacity: 1;
   color: rgb(47 52 59 / var(--tw-text-opacity));
-}
-
-.hover\:text-purp:hover {
-  --tw-text-opacity: 1;
-  color: rgb(125 131 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-red:hover {
