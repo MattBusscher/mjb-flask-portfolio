@@ -26,3 +26,7 @@ def resume():
 @views.route("/projects")
 def projects():
     return render_template("projects.html")
+
+@views.route("/download-resume")
+def downloadresume():
+    return render_template("word_resume.html")
